@@ -1,2 +1,2 @@
 Name: Kevin Amexo<br/>
-Position: Software Developer
+Position: Junior Developer
