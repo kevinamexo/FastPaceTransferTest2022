@@ -1,2 +1,2 @@
-Name: Kevin Amexo
+Name: Kevin Amexo<br/>
 Position: Software Developer
