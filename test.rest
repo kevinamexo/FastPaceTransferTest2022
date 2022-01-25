@@ -1,0 +1,129 @@
+###
+
+GET http://localhost:8000/api/users
+Content-type: application/json
+
+###
+POST http://localhost:8000/api/users/
+Content-type: application/json
+
+{
+    "firstName":"Yooo32",
+    "lastName":"Yooo23",
+    "email":"Yo32@mail.com",
+    "password":"123abcd",
+    "phoneNumber":"1253586930"
+}
+
+###
+
+POST http://localhost:8000/api/login/
+Content-type: application/json
+
+{
+    "email":"yo@mail.com",
+    "password":"123abcd"
+}
+
+
+### 
+GET http://localhost:8000/api/users/23
+Content-type: application/json
+
+
+###
+PUT http://localhost:8000/api/users/26
+Content-type: application/json
+
+{
+   
+    "first_name":"Ronaldo",
+    "last_name":" Vieira"
+    
+}
+
+###
+DELETE http://localhost:8000/api/users/16
+Content-type: application/json
+
+
+
+
+
+
+
+###
+POST http://localhost:8000/api/questions/
+Content-type: application/json
+
+{
+    "title":"My first question",
+    "question_text":"question text",
+    "user_id":16
+   
+}
+###
+GET http://localhost:8000/api/questions/4
+Content-type: application/json
+
+
+###
+PUT http://localhost:8000/api/questions/1
+Content-type: application/json
+
+{
+    "question_text":"This is the question text2",
+    "title":"Node and MYSQL2222",
+    
+}
+
+###
+DELETE http://localhost:8000/api/questions/1
+Content-type: application/json
+
+
+
+
+###
+POST http://localhost:8000/api/answers/
+Content-type: application/json
+
+{
+    "answer_text":"Node js with express is probably the easiest way to do it",
+    "answered_by":23,
+    "question_id":3
+}
+
+
+###
+GET http://localhost:8000/api/answers/1
+Content-type: application/json
+
+
+###
+PUT http://localhost:8000/api/answers/1/
+Content-type: application/json
+
+{
+    "answer_text":"Just use Node js"
+ 
+}
+
+###
+DELETE http://localhost:8000/api/answers/1/
+Content-type: application/json
+
+
+
+###
+POST http://localhost:8000/api/login/request-otp
+Content-type:applicaton/json
+
+{
+     "otp_type":"email",
+     "email":"yo@mail.com"
+}
+
+
+
+   

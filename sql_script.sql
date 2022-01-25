@@ -1,0 +1,34 @@
+-- CREATE DATABASE databasename;
+-- USE fastpacetest
+
+CREATE TABLE USER(
+  user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(25) NOT NULL, 
+  last_name VARCHAR(25) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  phone_number VARCHAR(11)  UNIQUE NOT NULL,
+  -- created_at TIMESTAMP NOT NULL,
+  password VARCHAR(255) NOT NULL,
+	otp_password VARCHAR(255),
+  otp_type VARCHAR(10),
+	expires_In DATETIME 
+
+);
+
+CREATE TABLE QUESTION(
+  question_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  question_text VARCHAR(200) NOT NULL,
+  -- posted_at TIMESTAMP NOT NULL,
+  user_id INT,
+  FOREIGN KEY(user_id) REFERENCES USER(user_id) ON DELETE SET NULL
+);
+
+CREATE TABLE ANSWER(
+  answer_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  answered_by INT,
+  text VARCHAR(300) NOT NULL,
+  question_id INT,
+  FOREIGN KEY(answered_by) REFERENCES USER(user_id) ON DELETE CASCADE,
+  FOREIGN KEY(question_id) REFERENCES QUESTION(question_id) ON DELETE CASCADE
+);

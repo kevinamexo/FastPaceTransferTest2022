@@ -1,0 +1,46 @@
+.loginPage {
+  height: 100vh;
+  width: 100%;
+}
+.loginOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  margin-top: 10%;
+}
+
+.loginPage h2 {
+  text-align: center;
+}
+
+.loginOption1,
+.loginOption2 {
+  height: 70px;
+  width: 250px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.loginOption2 {
+  margin-top: 20px;
+}
+
+.loginOptions-title {
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+
+.loginOptions-summary {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.loginOption1:hover,
+.loginOption2:hover {
+  background-color: rgb(227, 227, 227);
+}

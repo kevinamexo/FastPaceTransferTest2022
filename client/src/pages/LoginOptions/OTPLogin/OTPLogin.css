@@ -1,0 +1,8 @@
+.loginForm {
+  text-align: center;
+}
+.formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

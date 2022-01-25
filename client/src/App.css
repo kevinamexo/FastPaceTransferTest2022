@@ -1,0 +1,17 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 0 7px;
+}
